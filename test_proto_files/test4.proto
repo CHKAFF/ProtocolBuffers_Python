@@ -1,0 +1,20 @@
+message A {
+  enum e1 {
+    A : 0;
+    B : 1;
+  }
+
+  message B {
+    enum e2 {
+      A : 0;
+      B : 1;
+    }
+
+    message C {
+      enum e3 {
+      A : 0;
+      B : 1;
+      }
+    }
+  }
+}

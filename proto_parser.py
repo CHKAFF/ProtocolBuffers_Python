@@ -77,7 +77,7 @@ class proto_parser:
 
             search = re.search("(\S+) = (\S+)", line)
             if search is not None:
-                new_enum["properties"][search[1]] = search[2]
+                new_enum["properties"][search[1]] = search[2][:-1]
 
         return new_enum
 

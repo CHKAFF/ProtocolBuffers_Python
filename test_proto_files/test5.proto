@@ -1,0 +1,12 @@
+message A {
+  optional string name = 1;
+  optional int32 id = 2;
+  optional float p = 3
+  optional int64 long_id= 4;
+  optional bool IsTrue = 5;
+  repeated string = 6
+}
+
+message B {
+  optional A a = 1
+}

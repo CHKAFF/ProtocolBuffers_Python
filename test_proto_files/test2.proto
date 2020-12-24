@@ -1,0 +1,20 @@
+package tutorial;
+
+message Book {
+    optional int64 isbn = 1;
+    optional string title = 2;
+    optional string author = 3;
+}
+
+message GetBookRequest {
+    optional int64 isbn = 1;
+}
+
+message GetBookViaAuthor {
+    optional string author = 1;
+}
+
+message BookStore {
+    optional string name = 1;
+    repeated Book books = 2;
+}
